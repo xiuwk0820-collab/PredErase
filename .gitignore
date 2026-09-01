@@ -1,0 +1,11 @@
+checkpoints/
+*.pth
+*.pth.tar
+*.safetensors
+outputs/
+data/RemovalBench/
+data/bench_extracted/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/

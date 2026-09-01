@@ -1,0 +1,38 @@
+# Ablation: w/o JEPA — keep M_flux + prefill + shadow-aware / Full prompt
+method: flux_fill_native
+
+devices:
+  flux: cuda:0
+  ijepa: auto
+
+flux:
+  model_id: black-forest-labs/FLUX.2-klein-4B
+  num_inference_steps: 14
+  guidance_scale_flux: 3.5
+  guidance_scale_early: 3.5
+  guidance_scale_late: 1.5
+  guidance_switch_step: 5
+  strength: 1.0
+  seed: 22
+  max_side: 768
+  prompt_variant: full
+  prompt: >-
+    Clean empty background, seamless inpainting, natural lighting,
+    no object, no person, no cast shadow, no contact shading, no text,
+    photorealistic.
+  source_prefill: true
+  source_prefill_ring_px: 24
+  use_contact_shadow: true
+  use_m_flux_for_native: true
+  dilate_r: 4
+  mask_blur: 5
+
+ijepa:
+  model_name: facebook/ijepa_vith14_1k
+  checkpoint: auto
+  img_size: 224
+
+guidance:
+  enabled: false
+  mask_run_dilate_px: 4
+  guidance_scale: 0.45

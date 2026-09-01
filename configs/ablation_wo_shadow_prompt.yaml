@@ -1,0 +1,56 @@
+# Ablation: w/o Shadow Prompt — short prompt; negative drops "shadow residual"
+method: erase_world
+
+devices:
+  flux: cuda:0
+  ijepa: auto
+
+flux:
+  model_id: black-forest-labs/FLUX.2-klein-4B
+  num_inference_steps: 14
+  guidance_scale_flux: 3.5
+  guidance_scale_early: 3.5
+  guidance_scale_late: 1.5
+  guidance_switch_step: 5
+  strength: 1.0
+  seed: 22
+  max_side: 768
+  prompt_variant: short
+  prompt: remove the object and fill the background
+  negative_prompt: >-
+    object, person, animal, text, watermark, logo, blurry, low quality,
+    extra limbs, distorted, silhouette, floating debris.
+  source_prefill: true
+  source_prefill_ring_px: 24
+  use_contact_shadow: true
+  dilate_r: 4
+  mask_blur: 5
+
+ijepa:
+  model_name: facebook/ijepa_vith14_1k
+  checkpoint: auto
+  img_size: 224
+  pred_depth: 12
+  pred_emb_dim: 384
+
+guidance:
+  enabled: true
+  stable_guidance: true
+  counterfactual_guidance: false
+  cast_shadow_module: false
+  shadow_physics: false
+  dual_instance_guidance: false
+  retinex_illum: false
+  layered_light_guidance: false
+  attentive_eraser: false
+  struct_end_step: 4
+  struct_guidance_every_n: 2
+  struct_weight: 1.2
+  mask_run_dilate_px: 4
+  guidance_scale: 0.45
+  loss_type: mse
+  latent_pin_visible: true
+  pin_visible_before_jepa: true
+  fast_vae_decode: true
+  grad_mode: latent_std
+  dynamics_inner_steps: 1

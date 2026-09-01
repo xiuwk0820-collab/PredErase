@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "Erase-World: Remove Objects and Their Effects in Images with Training-Free World-Model Guidance"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Xiu
+    given-names: Waikit
+    email: xiuwk0820@connect.hku.hk
+    affiliation: The University of Hong Kong
+  - family-names: Lu
+    given-names: Qiang
+    affiliation: Sun Yat-sen University
+  - family-names: Chen
+    given-names: Junbiao
+    affiliation: Sun Yat-sen University
+  - family-names: Lin
+    given-names: Ziyu
+    affiliation: Tsinghua University
+  - family-names: Li
+    given-names: Xiying
+    affiliation: Sun Yat-sen University
+url: "https://github.com/xiuwk/Erase-World"
+license: MIT
+year: 2026
