@@ -4,12 +4,12 @@
     <b>Remove Objects and Their Effects in Images<br>with Training-Free World-Model Guidance</b>
   </p>
   <p align="center">
-    <a href="https://github.com/xiuwk/Erase-World"><img src="https://img.shields.io/badge/GitHub-Erase--World-black?logo=github" alt="GitHub"></a>
+    <a href="https://github.com/xiuwk0820-collab/Erase-World"><img src="https://img.shields.io/badge/GitHub-Erase--World-black?logo=github" alt="GitHub"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
-    <a href="https://github.com/xiuwk/Erase-World"><img src="https://img.shields.io/badge/code-training--free-0A7B3E" alt="training-free"></a>
+    <a href="https://github.com/xiuwk0820-collab/Erase-World"><img src="https://img.shields.io/badge/code-training--free-0A7B3E" alt="training-free"></a>
   </p>
   <p align="center">
-    <a href="https://github.com/xiuwk">Waikit Xiu</a><sup>1</sup>&nbsp;&nbsp;
+    <a href="https://github.com/xiuwk0820-collab">Waikit Xiu</a><sup>1</sup>&nbsp;&nbsp;
     Qiang Lu<sup>2</sup>&nbsp;&nbsp;
     Junbiao Chen<sup>2</sup>&nbsp;&nbsp;
     Ziyu Lin<sup>3</sup>&nbsp;&nbsp;
@@ -24,7 +24,7 @@
     <sup>*</sup>Corresponding author
   </p>
   <p align="center">
-    <a href="https://github.com/xiuwk/Erase-World"><b>Code</b></a>
+    <a href="https://github.com/xiuwk0820-collab/Erase-World"><b>Code</b></a>
     &nbsp;·&nbsp;
     <a href="#citation"><b>BibTeX</b></a>
   </p>
@@ -60,7 +60,7 @@ Evaluated on **RemovalBench**, **RORD-Val**, and **DEFACTO-Val** under the OmniE
 ## Setup
 
 ```bash
-git clone https://github.com/xiuwk/Erase-World.git
+git clone https://github.com/xiuwk0820-collab/Erase-World.git
 cd Erase-World
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -132,7 +132,7 @@ Paper ↔ code map: [`docs/METHOD_ALIGNMENT.md`](docs/METHOD_ALIGNMENT.md) · re
   title={Erase-World: Remove Objects and Their Effects in Images with Training-Free World-Model Guidance},
   author={Xiu, Waikit and Lu, Qiang and Chen, Junbiao and Lin, Ziyu and Li, Xiying},
   year={2026},
-  url={https://github.com/xiuwk/Erase-World}
+  url={https://github.com/xiuwk0820-collab/Erase-World}
 }
 ```
 
