@@ -1,39 +1,35 @@
-<p align="center">
-  <h1 align="center">Erase-World</h1>
-  <p align="center">
-    <b>Remove Objects and Their Effects in Images<br>with Training-Free World-Model Guidance</b>
-  </p>
-  <p align="center">
-    <a href="https://github.com/xiuwk0820-collab/Erase-World"><img src="https://img.shields.io/badge/GitHub-Erase--World-black?logo=github" alt="GitHub"></a>
-    <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
-    <a href="https://github.com/xiuwk0820-collab/Erase-World"><img src="https://img.shields.io/badge/code-training--free-0A7B3E" alt="training-free"></a>
-  </p>
-  <p align="center">
-    <a href="https://github.com/xiuwk0820-collab">Waikit Xiu</a><sup>1</sup>&nbsp;&nbsp;
-    Qiang Lu<sup>2</sup>&nbsp;&nbsp;
-    Junbiao Chen<sup>2</sup>&nbsp;&nbsp;
-    Ziyu Lin<sup>3</sup>&nbsp;&nbsp;
-    Xiying Li<sup>2*</sup>
-  </p>
-  <p align="center">
-    <sup>1</sup>The University of Hong Kong&nbsp;&nbsp;
-    <sup>2</sup>Sun Yat-sen University&nbsp;&nbsp;
-    <sup>3</sup>Tsinghua University<br>
-    <a href="mailto:xiuwk0820@connect.hku.hk">xiuwk0820@connect.hku.hk</a> (Waikit Xiu)
-    &nbsp;·&nbsp;
-    <sup>*</sup>Corresponding author
-  </p>
-  <p align="center">
-    <a href="https://github.com/xiuwk0820-collab/Erase-World"><b>Code</b></a>
-    &nbsp;·&nbsp;
-    <a href="#citation"><b>BibTeX</b></a>
-  </p>
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="assets/teaser_results.png" width="100%" alt="Erase-World teaser: object-and-effect removal">
-</p>
-<p align="center"><em>Instance-only masks (red). Erase-World removes the object together with cast shadows and contact shading — no paired training, no weight updates.</em></p>
+# Erase-World
+
+**Remove Objects and Their Effects in Images<br>with Training-Free World-Model Guidance**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Erase--World-black?logo=github)](https://github.com/xiuwk0820-collab/Erase-World)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820-collab/Erase-World)
+
+[Waikit Xiu](https://github.com/xiuwk0820-collab)<sup>1</sup>&nbsp;&nbsp;
+Qiang Lu<sup>2</sup>&nbsp;&nbsp;
+Junbiao Chen<sup>2</sup>&nbsp;&nbsp;
+Ziyu Lin<sup>3</sup>&nbsp;&nbsp;
+Xiying Li<sup>2*</sup>
+
+<sup>1</sup>The University of Hong Kong&nbsp;&nbsp;
+<sup>2</sup>Sun Yat-sen University&nbsp;&nbsp;
+<sup>3</sup>Tsinghua University<br>
+[xiuwk0820@connect.hku.hk](mailto:xiuwk0820@connect.hku.hk) (Waikit Xiu)
+&nbsp;·&nbsp;
+<sup>*</sup>Corresponding author
+
+[**Code**](https://github.com/xiuwk0820-collab/Erase-World)
+&nbsp;·&nbsp;
+[**BibTeX**](#citation)
+
+<img src="./assets/teaser_results.png" width="100%" alt="Erase-World teaser: object-and-effect removal">
+
+<em>Instance-only masks (red). Erase-World removes the object together with cast shadows and contact shading — no paired training, no weight updates.</em>
+
+</div>
 
 ---
 
@@ -45,16 +41,16 @@ Object-and-effect removal is not the same as filling a hole. A frozen inpainter 
 
 Evaluated on **RemovalBench**, **RORD-Val**, and **DEFACTO-Val** under the OmniEraser / SmartEraser protocols.
 
-<p align="center">
-  <img src="assets/erase_world_pipeline.png" width="100%" alt="Erase-World pipeline">
-</p>
+<div align="center">
+<img src="./assets/erase_world_pipeline.png" width="100%" alt="Erase-World pipeline">
+</div>
 <p align="center"><em>Pipeline: gray-fill + frozen I-JEPA target (top), contact-band \(M_{\mathrm{flux}}\) (bottom), sparse guidance on frozen FLUX.2-klein-4B (center).</em></p>
 
 ## Qualitative
 
-<p align="center">
-  <img src="assets/qualitative_comparison.png" width="100%" alt="Qualitative comparison on RemovalBench">
-</p>
+<div align="center">
+<img src="./assets/qualitative_comparison.png" width="100%" alt="Qualitative comparison on RemovalBench">
+</div>
 <p align="center"><em>RemovalBench, instance-only masks. Left to right: Input, mask, native FLUX.2, OmniEraser, <b>ours</b>, clean plate.</em></p>
 
 ## Setup
