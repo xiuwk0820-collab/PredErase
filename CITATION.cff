@@ -1,24 +1,21 @@
 cff-version: 1.2.0
-title: "Erase-World: Remove Objects and Their Effects in Images with Training-Free World-Model Guidance"
+title: "PredErase: Training-Free Object-and-Effect Removal with Predictive Latent Guidance"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
   - family-names: Xiu
     given-names: Waikit
     email: xiuwk0820@connect.hku.hk
-    affiliation: The University of Hong Kong
+    affiliation: Sun Yat-sen University
   - family-names: Lu
     given-names: Qiang
     affiliation: Sun Yat-sen University
   - family-names: Chen
     given-names: Junbiao
     affiliation: Sun Yat-sen University
-  - family-names: Lin
-    given-names: Ziyu
-    affiliation: Tsinghua University
   - family-names: Li
     given-names: Xiying
     affiliation: Sun Yat-sen University
-url: "https://github.com/xiuwk0820-collab/Erase-World"
+url: "https://github.com/xiuwk0820-collab/PredErase"
 license: MIT
 year: 2026

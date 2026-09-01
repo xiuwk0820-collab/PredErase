@@ -1,39 +1,36 @@
 <div align="center">
 
-# Erase-World
+# PredErase
 
-**Remove Objects and Their Effects in Images<br>with Training-Free World-Model Guidance**
+**Training-Free Object-and-Effect Removal<br>with Predictive Latent Guidance**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Erase--World-black?logo=github)](https://github.com/xiuwk0820-collab/Erase-World)
+[![GitHub](https://img.shields.io/badge/GitHub-PredErase-black?logo=github)](https://github.com/xiuwk0820-collab/PredErase)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820-collab/Erase-World)
+[![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820-collab/PredErase)
 
-[Waikit Xiu](https://github.com/xiuwk0820-collab)<sup>1</sup>&nbsp;&nbsp;
-Qiang Lu<sup>2</sup>&nbsp;&nbsp;
-Junbiao Chen<sup>2</sup>&nbsp;&nbsp;
-Ziyu Lin<sup>3</sup>&nbsp;&nbsp;
-Xiying Li<sup>2*</sup>
+[Waikit Xiu](https://github.com/xiuwk0820-collab)&nbsp;&nbsp;
+Qiang Lu&nbsp;&nbsp;
+Junbiao Chen&nbsp;&nbsp;
+Xiying Li<sup>*</sup>
 
-<sup>1</sup>The University of Hong Kong&nbsp;&nbsp;
-<sup>2</sup>Sun Yat-sen University&nbsp;&nbsp;
-<sup>3</sup>Tsinghua University<br>
+Sun Yat-sen University<br>
 [xiuwk0820@connect.hku.hk](mailto:xiuwk0820@connect.hku.hk) (Waikit Xiu)
 &nbsp;·&nbsp;
 <sup>*</sup>Corresponding author
 
-[**Code**](https://github.com/xiuwk0820-collab/Erase-World)
+[**Code**](https://github.com/xiuwk0820-collab/PredErase)
 &nbsp;·&nbsp;
 [**BibTeX**](#citation)
 
-<img src="./assets/teaser_results.png" width="100%" alt="Erase-World teaser: object-and-effect removal">
+<img src="./assets/teaser_results.png" width="100%" alt="PredErase teaser: object-and-effect removal">
 
-<em>Instance-only masks (red). Erase-World removes the object together with cast shadows and contact shading — no paired training, no weight updates.</em>
+<em>Instance-only masks (red). PredErase removes the object together with cast shadows and contact shading — no paired training, no weight updates.</em>
 
 </div>
 
 ---
 
-Object-and-effect removal is not the same as filling a hole. A frozen inpainter constrained to \(M_{\mathrm{obj}}\) often leaves shadows and contact shading on the support. **Erase-World** keeps **FLUX.2-klein-4B** and **I-JEPA ViT-H/14** frozen, and only steers latents at test time:
+Object-and-effect removal is not the same as filling a hole. A frozen inpainter constrained to \(M_{\mathrm{obj}}\) often leaves shadows and contact shading on the support. **PredErase** keeps **FLUX.2-klein-4B** and **I-JEPA ViT-H/14** frozen, and only steers latents at test time:
 
 1. **Where to edit** — a contact-aware geometric prior expands the user mask into \(M_{\mathrm{flux}}\).
 2. **What to reconstruct** — a cached I-JEPA hole prediction guides sparse projected updates inside that support.
@@ -41,8 +38,10 @@ Object-and-effect removal is not the same as filling a hole. A frozen inpainter 
 
 Evaluated on **RemovalBench**, **RORD-Val**, and **DEFACTO-Val** under the OmniEraser / SmartEraser protocols.
 
+The Python package path remains `erase_world` (legacy import); the project name is PredErase.
+
 <div align="center">
-<img src="./assets/erase_world_pipeline.png" width="100%" alt="Erase-World pipeline">
+<img src="./assets/erase_world_pipeline.png" width="100%" alt="PredErase pipeline">
 </div>
 <p align="center"><em>Pipeline: gray-fill + frozen I-JEPA target (top), contact-band \(M_{\mathrm{flux}}\) (bottom), sparse guidance on frozen FLUX.2-klein-4B (center).</em></p>
 
@@ -56,8 +55,8 @@ Evaluated on **RemovalBench**, **RORD-Val**, and **DEFACTO-Val** under the OmniE
 ## Setup
 
 ```bash
-git clone https://github.com/xiuwk0820-collab/Erase-World.git
-cd Erase-World
+git clone https://github.com/xiuwk0820-collab/PredErase.git
+cd PredErase
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 huggingface-cli login   # accept FLUX.2-klein-4B
@@ -124,11 +123,11 @@ Paper ↔ code map: [`docs/METHOD_ALIGNMENT.md`](docs/METHOD_ALIGNMENT.md) · re
 ## Citation
 
 ```bibtex
-@article{xiu2026eraseworld,
-  title={Erase-World: Remove Objects and Their Effects in Images with Training-Free World-Model Guidance},
-  author={Xiu, Waikit and Lu, Qiang and Chen, Junbiao and Lin, Ziyu and Li, Xiying},
+@article{xiu2026prederase,
+  title={PredErase: Training-Free Object-and-Effect Removal with Predictive Latent Guidance},
+  author={Xiu, Waikit and Lu, Qiang and Chen, Junbiao and Li, Xiying},
   year={2026},
-  url={https://github.com/xiuwk0820-collab/Erase-World}
+  url={https://github.com/xiuwk0820-collab/PredErase}
 }
 ```
 

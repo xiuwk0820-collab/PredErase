@@ -1,4 +1,4 @@
-# Erase-World default config (paper-aligned defaults where applicable)
+# PredErase default config (paper-aligned defaults where applicable)
 # Checkpoint: black-forest-labs/FLUX.2-klein-4B (frozen)
 # Prior: I-JEPA ViT-H/14-1K (frozen)
 

@@ -1,4 +1,4 @@
-"""Method identifiers for Erase-World."""
+"""Method identifiers for PredErase (legacy key: erase_world)."""
 
 ERASE_WORLD = "erase_world"
 FLUX_FILL_NATIVE = "flux_fill_native"

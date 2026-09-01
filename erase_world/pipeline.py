@@ -1,4 +1,4 @@
-"""Main Erase-World inference pipeline (paper Alg.1 orchestration)."""
+"""Main PredErase inference pipeline (paper Alg.1 orchestration)."""
 
 from __future__ import annotations
 

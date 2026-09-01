@@ -1,4 +1,4 @@
-# Method ↔ Code Alignment (Erase-World)
+# Method ↔ Code Alignment (PredErase)
 
 This document maps paper Alg.1 / symbols to modules in this release.
 

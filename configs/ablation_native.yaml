@@ -1,4 +1,4 @@
-# Ablation: Pure FLUX.2 / native (no Erase-World modules)
+# Ablation: Pure FLUX.2 / native (no PredErase modules)
 method: flux_fill_native
 
 devices:
