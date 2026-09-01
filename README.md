@@ -8,12 +8,13 @@
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820-collab/PredErase)
 
-[Waikit Xiu](https://github.com/xiuwk0820-collab)&nbsp;&nbsp;
-Qiang Lu&nbsp;&nbsp;
-Junbiao Chen&nbsp;&nbsp;
-Xiying Li<sup>*</sup>
+[Waikit Xiu](https://github.com/xiuwk0820-collab)<sup>1</sup>&nbsp;&nbsp;
+Qiang Lu<sup>2</sup>&nbsp;&nbsp;
+Junbiao Chen<sup>2</sup>&nbsp;&nbsp;
+Xiying Li<sup>2,*</sup>
 
-Sun Yat-sen University<br>
+<sup>1</sup>The University of Hong Kong&nbsp;&nbsp;
+<sup>2</sup>Sun Yat-sen University<br>
 [xiuwk0820@connect.hku.hk](mailto:xiuwk0820@connect.hku.hk) (Waikit Xiu)
 &nbsp;·&nbsp;
 <sup>*</sup>Corresponding author
