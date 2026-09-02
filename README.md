@@ -5,11 +5,11 @@
 **Training-Free Object-and-Effect Removal<br>with Predictive Latent Guidance**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2609.00956-b31b1b.svg)](https://arxiv.org/abs/2609.00956)
-[![GitHub](https://img.shields.io/badge/GitHub-PredErase-black?logo=github)](https://github.com/xiuwk0820-collab/PredErase)
+[![GitHub](https://img.shields.io/badge/GitHub-PredErase-black?logo=github)](https://github.com/xiuwk0820/PredErase)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820-collab/PredErase)
+[![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820/PredErase)
 
-[Waikit Xiu](https://github.com/xiuwk0820-collab)<sup>1</sup>&nbsp;&nbsp;
+[Waikit Xiu](https://github.com/xiuwk0820)<sup>1</sup>&nbsp;&nbsp;
 Qiang Lu<sup>2</sup>&nbsp;&nbsp;
 Junbiao Chen<sup>2</sup>&nbsp;&nbsp;
 Xiying Li<sup>2,*</sup>
@@ -22,7 +22,7 @@ Xiying Li<sup>2,*</sup>
 
 [**Paper**](https://arxiv.org/abs/2609.00956)
 &nbsp;·&nbsp;
-[**Code**](https://github.com/xiuwk0820-collab/PredErase)
+[**Code**](https://github.com/xiuwk0820/PredErase)
 &nbsp;·&nbsp;
 [**BibTeX**](#citation)
 
@@ -59,7 +59,7 @@ The Python package path remains `erase_world` (legacy import); the project name 
 ## Setup
 
 ```bash
-git clone https://github.com/xiuwk0820-collab/PredErase.git
+git clone https://github.com/xiuwk0820/PredErase.git
 cd PredErase
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
