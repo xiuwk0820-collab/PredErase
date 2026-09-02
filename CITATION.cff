@@ -17,5 +17,11 @@ authors:
     given-names: Xiying
     affiliation: Sun Yat-sen University
 url: "https://github.com/xiuwk0820-collab/PredErase"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2609.00956"
+    description: arXiv preprint
+  - type: doi
+    value: "10.48550/arXiv.2609.00956"
 license: MIT
 year: 2026

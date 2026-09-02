@@ -4,6 +4,7 @@
 
 **Training-Free Object-and-Effect Removal<br>with Predictive Latent Guidance**
 
+[![arXiv](https://img.shields.io/badge/arXiv-2609.00956-b31b1b.svg)](https://arxiv.org/abs/2609.00956)
 [![GitHub](https://img.shields.io/badge/GitHub-PredErase-black?logo=github)](https://github.com/xiuwk0820-collab/PredErase)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![training-free](https://img.shields.io/badge/code-training--free-0A7B3E)](https://github.com/xiuwk0820-collab/PredErase)
@@ -19,6 +20,8 @@ Xiying Li<sup>2,*</sup>
 &nbsp;·&nbsp;
 <sup>*</sup>Corresponding author
 
+[**Paper**](https://arxiv.org/abs/2609.00956)
+&nbsp;·&nbsp;
 [**Code**](https://github.com/xiuwk0820-collab/PredErase)
 &nbsp;·&nbsp;
 [**BibTeX**](#citation)
@@ -127,8 +130,9 @@ Paper ↔ code map: [`docs/METHOD_ALIGNMENT.md`](docs/METHOD_ALIGNMENT.md) · re
 @article{xiu2026prederase,
   title={PredErase: Training-Free Object-and-Effect Removal with Predictive Latent Guidance},
   author={Xiu, Waikit and Lu, Qiang and Chen, Junbiao and Li, Xiying},
+  journal={arXiv preprint arXiv:2609.00956},
   year={2026},
-  url={https://github.com/xiuwk0820-collab/PredErase}
+  url={https://arxiv.org/abs/2609.00956}
 }
 ```
 
